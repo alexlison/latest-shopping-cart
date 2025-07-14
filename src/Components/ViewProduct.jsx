@@ -11,7 +11,7 @@ const ViewProduct = () => {
     axios
       .get("https://dummyjson.com/products")
       .then((response) => {
-        changeData({products: response.data.products});
+        changeData(response.data);
       })
       .catch();
   };
